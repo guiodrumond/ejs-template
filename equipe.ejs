@@ -1,0 +1,20 @@
+    <%- include("_header") %>
+
+    <section>
+      <h1>
+        <%= título %>
+      </h1>
+      <div class="equipe">
+        <% membros.forEach((membro) => { %>
+        <div class="equipeMembro">
+          <img src=https://randomuser.me/api/portraits/<%= membro.gênero %>/<%= membro.foto %>.jpg>
+          <h2><%= membro.nome %></h2>
+          <p class="equipeMembroFunção"><%= membro.função %></p>
+          <p><%= membro.descrição %></p>
+        </div>
+        <% }) %>
+      </div>
+
+    </section>
+
+    <%- include("_footer") %>

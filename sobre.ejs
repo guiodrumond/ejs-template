@@ -1,0 +1,23 @@
+    <%- include("_header") %>
+
+    <section>
+      <h1>
+        <%= título %>
+      </h1>
+
+      <% textosSobre.forEach((texto) => { %>
+      <h2> <%= texto.título %> </h2>
+      <p> <%= texto.texto %> </p>
+      <% }) %>
+
+      <h2>Lista de prêmios</h2>
+      
+      <ul>
+        <% for (var i=0; i< prêmios.length; i++) { %>
+        <li> <%= prêmios[i] %> </li>
+        <% } %>
+      </ul>
+
+    </section>
+
+    <%- include("_footer") %>

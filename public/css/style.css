@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+li {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #888;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 120px;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+
+header a {
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 0 5rem;
+    flex-grow: 1;
+}
+
+.equipe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipeMembro {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    text-align: center;
+}
+
+.equipeMembro img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.equipeMembroFunção {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.telefone::before {
+    content: "🤙";
+}
+
+.email::before {
+    content: "📨";
+}
+
+.endereço::before {
+    content: "📌";
+}
+
+.card-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    height: 340px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #cecece;
+    border-radius: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+label {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+input {
+    width: 80%;
+    height: 1.5rem;
+    margin: auto;
+}
+
+button {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 35px;
+    border: 2px solid;
+    text-transform: uppercase;
+}
+
+.links-login {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}

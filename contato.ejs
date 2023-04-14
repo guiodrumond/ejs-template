@@ -1,0 +1,18 @@
+    <%- include("_header") %>
+
+    <section>
+      <h1>
+        <%= título %>
+      </h1>
+
+      <ul>
+        <% contatos.forEach((contato) => { %>
+          <li class= <%= contato.tipo %> >
+            <%= contato.contato %>
+          </li>
+        <% }) %>
+      </ul>
+
+    </section>
+
+    <%- include("_footer") %>
